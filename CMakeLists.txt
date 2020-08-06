@@ -4,6 +4,9 @@ project(shallow VERSION 0.1.0 LANGUAGES C CXX)
 
 option(shallow_BUILD_TESTING "Build the shallow tests" ON)
 
+set(shallow_INTEGER std::ptrdiff_t CACHE STRING "Shallow standard reprepresentation of integral values")
+mark_as_advanced(shallow_INTEGER)
+
 include(GNUInstallDirs)
 set(shallow_INSTALL_BINDIR ${CMAKE_INSTALL_BINDIR})
 set(shallow_INSTALL_LIBDIR ${CMAKE_INSTALL_LIBDIR})
