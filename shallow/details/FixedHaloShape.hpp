@@ -9,8 +9,9 @@
 namespace Shallow::Details
 {
   template<integer M, integer N>
-  class FixedHaloShape : FixedShape<M,N>
+  class FixedHaloShape : public FixedShape<M,N>
   {
+  public:
     static constexpr HaloShape shape{M,N};
 
     constexpr

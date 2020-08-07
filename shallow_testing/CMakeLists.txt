@@ -11,5 +11,6 @@ endmacro()
 shallow_add_test(euclidean euclidean_test euclidean_test.cpp)
 shallow_add_test(root_grid root_grid_test root_grid_test.cpp)
 shallow_add_test(subgrid subgrid_test subgrid_test.cpp)
+shallow_add_test(shallow_data shallow_data_test shallow_data_test.cpp)
 
 

@@ -30,8 +30,6 @@ namespace Shallow::Testing
 
     ASSERT_EQ(rg.origin(0), a);
     ASSERT_EQ(rg.origin(1), b);
-
-
   }
 
 } // end of namespace Shallow::Testing

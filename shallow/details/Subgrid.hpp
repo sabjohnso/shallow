@@ -23,6 +23,7 @@ namespace Shallow::Details
 
     constexpr static FixedShape<Nx,Ny> shape{};
     constexpr static FixedHaloShape<NHx, NHy> halo_shape{};
+    constexpr static auto full_shape = halo_shape + shape + halo_shape;
 
     Subgrid() = delete;
 

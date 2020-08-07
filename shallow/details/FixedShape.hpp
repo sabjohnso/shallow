@@ -17,5 +17,11 @@ namespace Shallow::Details
     constexpr
     operator Shape() const { return shape; }
 
+    template<integer M2, integer N2>
+    friend constexpr auto
+    operator +(FixedShape, FixedShape<M2,N2>){
+      return FixedShape<M+M2,N+N2>{};
+    }
+
   }; // end of class FixedShape
 } // end of namespace Shallow::Details
